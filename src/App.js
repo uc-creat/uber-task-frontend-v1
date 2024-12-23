@@ -29,7 +29,7 @@ function App() {
 
     try {
       // Construct the URL using user input (userId)
-      const url = `http://127.0.0.1:5000/jira-check-similarity/${userId}`;
+      const url = `https://uber-task-backend-v1.onrender.com/jira/similarity/${userId}`;
 
       // Make the GET request
       const response = await axios.get(url);
@@ -55,7 +55,7 @@ function App() {
 
     try {
       // Construct the POST URL for Stage 2
-      const url = `http://127.0.0.1:5000/jira`;
+      const url = `https://uber-task-backend-v1.onrender.com/jira`;
 
       // Data to send in POST request (using userData from Stage 1)
       const postData = userData["data"];
